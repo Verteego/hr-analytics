@@ -5,18 +5,19 @@
 
 import pandas as pd
 import numpy as np
-from __future__ import division
 
-#disable warnings in notebook
+#disable warnings to make notebook smoother
 import warnings
 warnings.filterwarnings('ignore')
 
 
 # In[2]:
 
+# load data frame
 leave_df = pd.read_csv('../data/raw_data.csv')
 col_names = leave_df.columns.tolist()
 
+#show some basic output
 print "Column names:"
 print col_names
 
